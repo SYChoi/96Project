@@ -1,9 +1,23 @@
 # 96Project/project_1st
 
 ## What is Needed for server?
-  Python, Django, Django-scheduler
+  Python 3.6.x
   
-  Node.js, bower
+  Django
+  ```
+  pip install Django
+  ```
+  Django-scheduler
+  ```
+  pip install Django-scheduler
+  ```
+  Node.js 10.15.1 LTS
+  
+  bower
+  ```
+  npm install -g bower
+  pip install Django-bower
+  ```
 
 ## What purpose?
   To study Python & Django web programming for backend developer.
