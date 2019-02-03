@@ -125,13 +125,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "media")
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "media"),
 ]
+
+'''
 STATICFILES_FINDERS = [
     'djangobower.finders.BowerFinder',
 ]
+'''
 
 # Bower Options
 BOWER_COMPONENTS_ROOT = '/c/projects/96Project/Project_1st/components/'

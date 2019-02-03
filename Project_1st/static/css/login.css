@@ -1,0 +1,54 @@
+body{
+	font-family: serif;
+	text-align: center;
+	vertical-align: middle;
+}
+
+h1{
+	font-size: 24px;
+	color: #281a0b;
+}
+
+.btn{
+	width: 100px;
+	height: 35px;
+	color: white;
+	background-color: #1d2088;
+	border-style: none;
+	margin-top: 5px;
+	font-size: 18px;
+}
+
+.form-group{
+	position: static;
+	margin: 0 auto;
+	width:400px;
+	height: 80px;
+	margin-top: 5px;
+	padding-top: 1px;
+	padding-bottom: 2px;
+	background-color: #f0f0f0;
+	color: #281a0b;
+}
+
+.form-group h3{
+	margin-top: 2px;
+}
+
+.form-control{
+	position: static;
+	border-style: none;
+	background-color: #f0f0f0;
+	padding: 0px;
+	height: 20px;
+	color: #281a0b;
+	font-size: 18px;
+	text-align: center;
+}
+
+input[type=text]:focus {
+	outline: none;
+}
+input[type=password]:focus{
+	outline: none;
+}
