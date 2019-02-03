@@ -2,7 +2,7 @@
 ## 96Project/project_1st
 
 ### What is Needed for server?
-  Python 3.6.x
+  Python 3.6.x - Download from Webpage
   
   Django
   ```
@@ -12,7 +12,7 @@
   ```
   pip install Django-scheduler
   ```
-  Node.js 10.15.1 LTS
+  Node.js 10.15.1 LTS - Download from Webpage
   
   bower
   ```
