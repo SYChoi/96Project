@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #added to make calendar
-    'schedule',
-    'djangobower',
+#   'schedule',
+#   'djangobower',
     #our web application
     'account',
     'index',
@@ -134,7 +134,7 @@ STATICFILES_DIRS = [
 STATICFILES_FINDERS = [
     'djangobower.finders.BowerFinder',
 ]
-'''
+
 
 # Bower Options
 BOWER_COMPONENTS_ROOT = '/c/projects/96Project/Project_1st/components/'
@@ -143,3 +143,4 @@ BOWER_INSTALLED_APPS = (
     'jquery-ui',
     'bootstrap'
 )
+'''
