@@ -1,7 +1,10 @@
 from django.db import models
+from account.models import Account
 
-class Event():
-    eventname = models.CharField(min_length=1, max_length=30)
+class Event(models.Model):
+    eventID = models.IntegerField(primary_key=True)
+    eventname = models.CharField(max_length=30)
+    user = models.ForeignKey('account.Account', on_delete=models.CASCADE)
     date = models.DateField()
     time = models.TimeField()
     place = models.CharField(max_length=50)
