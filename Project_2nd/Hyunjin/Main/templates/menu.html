@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kor">
+	<head>
+
+		{% load static %}
+		{% load staticfiles %}
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+		<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon"/>
+		<link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon"/>
+		<title>Hyunjin</title>
+
+		<link rel="stylesheet" href="{% static 'css/menu.css' %}"/>
+	</head>
+	<body>
+		<script>
+			$(function() {
+				$('ul.tab li').click(function() {
+					var activeTab = $(this).attr('data-tab');
+					$('ul.tab li').removeClass('current');
+					$('.tabcontent').removeClass('current');
+					$(this).addClass('current');
+					$('#' + activeTab).addClass('current');
+				})
+			});
+		</script>
+		<div class="container">
+			<ul class="tab">
+				<li class="tab-link current" data-tab="tab1"><a href="#">회사소개</a></li>
+				<li class="tab-link" data-tab="tab2"><a href="#">컨설팅</a></li>
+				<li class="tab-link" data-tab="tab3"><a href="#">자재 구매</a></li>
+			</ul>
+
+			<div id="tab1" class="tabcontent current">
+				A
+			</div>
+			<div id="tab2" class="tabcontent">
+				B
+			</div>
+			<div id="tab3" class="tabcontent">
+				C
+			</div>
+
+		</div>
+	</body>
+</html>
