@@ -29,3 +29,6 @@ def download(request):
 
 def engine_mat(request):
 	return render(request, 'engine_material.html')
+
+def BA(request):
+	return render(request, 'business_area.html')
