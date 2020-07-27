@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends "menu.html" %}
+{% load static %}
+<html lang="kor">
+	<head>
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+	</head>
+	<body>
+		{% block content %}
+		<h1>원자재</h1>
+
+		<h2><a name="Duplex">(Supper)Duplex,6Mo.plate/Bar</a></h2>
+		<hr>
+
+		<h2><a name="Fitting">Fitting/Flange</a></h2>
+		<hr>
+		<h2><a name="형강류">형강류</a></h2>
+		{% endblock %}
+	</body>
+</html>
