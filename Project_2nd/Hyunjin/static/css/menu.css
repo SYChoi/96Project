@@ -9,17 +9,13 @@ body {
   overflow-x: hidden;  
 }
 
-h1 {
-  margin: 2em 0 1.5em 0;
-}
-
 nav {
-  width: 75%;
+  width: 78%;
   display: flex;
   justify-content: center;
   position: relative;
 	float: right;
-	margin-top: 70px;
+	margin-top: 55px;
   background: linear-gradient(90deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
@@ -27,6 +23,12 @@ ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+#logo {
+	width: 20%;
+	height: 100px;
+	margin: 10px;
 }
 
 #main-menu > li {
@@ -77,8 +79,3 @@ ul, li {
  text-decoration: underline;
 }
 
-section {
-  column-width: 15em;
-  background: #dadadf;
-  padding: 2em 12em;
-}
