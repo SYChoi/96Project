@@ -12,4 +12,5 @@ urlpatterns = [
 	path('industrial_part/', views.indust_part),
 	path('download/', views.download),
 	path('engine_material/', views.engine_mat),
+	path('BA/', views.BA),
 ]
