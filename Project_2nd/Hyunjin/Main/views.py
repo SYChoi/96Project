@@ -6,6 +6,9 @@ def index(request):
 def greeting(request):
         return render(request, 'greeting.html')
 
+def contact(request):
+	return render(request, 'contact.html')
+
 def notice(request):
 	return render(request, 'notice.html')
 
