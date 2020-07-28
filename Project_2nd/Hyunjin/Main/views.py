@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect
 
 def index(request):
-	return render(request, 'main.html',)
+	return render(request, 'main.html')
+
+def greeting(request):
+        return render(request, 'greeting.html')
 
 def notice(request):
 	return render(request, 'notice.html')
