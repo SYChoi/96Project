@@ -8,11 +8,25 @@
 	<body>
 		{% block content %}
 			<h1> 공지 사항 </h1>
-			<ol>
-				{% for post in posts %}
-					<li><a href="#">{{ post.name }}</a></li>
-				{% endfor %}
-			</ol>
+			<table>
+				<thead>
+					<tr>
+						<th>제목</th>
+						<th>작성일</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for post in posts %}
+						<tr>
+							<td> <a href="#"> {{ post.name }} </a></td>
+							<td> {{ post.date }} </td>
+						</tr>
+					{% endfor %}
+				<tbody>
+			</table>
+<!--
+			<a href="/notice_create/"><button> 글작성 </button></a>
+-->
 		{% endblock %}
 	</body>
 </html>
