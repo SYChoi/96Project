@@ -5,6 +5,7 @@ urlpatterns = [
 	path('', views.index),
 	path('greeting/', views.greeting, name='greeting'),
 	path('contact/', views.contact, name='contact'),
+	path('notice/<int:pk>/', views.notice_detail, name='notice_detail'),
 	path('notice/', views.notice, name='notice'),
 #	path('notice_create/', views.notice_create, name='notice_create'),
 	path('antirust/', views.antirust, name='antirust'),

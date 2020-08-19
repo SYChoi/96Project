@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.http import Http404
 from Main.models import Post
 #from Main.forms import PostForm
 
@@ -14,6 +15,13 @@ def contact(request):
 def notice(request):
 	posts = Post.objects.all()
 	return render(request, 'notice.html', {'posts': posts})
+
+def notice_detail(request, pk):
+	try:
+		post = Post.objects.get(pk=pk)
+	except:
+		raise Http404('해당 게시물을 찾을 수 없습니다.')
+	return render(request, 'notice_detail.html', {'post': post})
 """
 def notice_create(request):
 	if request.method == "POST":

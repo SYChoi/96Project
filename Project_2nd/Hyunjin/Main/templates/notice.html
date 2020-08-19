@@ -18,7 +18,7 @@
 				<tbody>
 					{% for post in posts %}
 						<tr>
-							<td> <a href="#"> {{ post.name }} </a></td>
+							<td> <a href="/notice/{{ post.id }}"> {{ post.name }} </a></td>
 							<td> {{ post.date }} </td>
 						</tr>
 					{% endfor %}

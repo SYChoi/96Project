@@ -1,0 +1,11 @@
+{% extends 'menu.html' %}
+	<body>
+		{% block content %}
+			<h1> 공지 사항 </h1>
+
+			<h2> {{ post.name }} </h2>
+			<p> {{ post.content }} </p>
+
+			<a href="/notice/"><button> 뒤로가기 </button></a>
+		{% endblock %}
+	</body>
