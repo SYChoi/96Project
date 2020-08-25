@@ -14,7 +14,6 @@ urlpatterns = [
 	path('online_consult/', views.online_consult, name='online_consult'),
 	path('raw_material/', views.raw_mat, name='raw_mat'),
 	path('industrial_part/', views.indust_part, name='indust_part'),
-	path('download/', views.download, name='download'),
 	path('engine_material/', views.engine_mat, name='engine_mat'),
 	path('BA/', views.BA, name='BA'),
 ]

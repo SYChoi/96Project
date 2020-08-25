@@ -52,9 +52,6 @@ def raw_mat(request):
 def indust_part(request):
 	return render(request, 'industrial_part.html')
 
-def download(request):
-	return render(request, 'download.html')
-
 def engine_mat(request):
 	return render(request, 'engine_material.html')
 
