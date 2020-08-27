@@ -8,15 +8,21 @@
 	<body>
 		{% block content %}
 		<h1>방청제</h1>
-		<h2><a name="volatility">기화성 방청제</a></h2>
-		<h3>파우더를 부직포에 담고 플라스틱 용기에 넣어 이온 작용으로 방청 효과가 유지되기 때문에 직접 도포하는 일이 없어 취급이 간단하고 방청력이 장시간 지속 (방청기간 1년 ~ 3년)</h3>
-		<img src="{% static 'img/Antirust_1.png' %}" />
-		<img src="{% static 'img/Antirust_2.png' %}" />
-		<hr>
 
-		<h2><a name="corrosion_oil">방청유</a></h2>
-		<h3>스프레이 타입으로 도포가 편리하고 방청력이 우수하며 인화점이 높아 안전한 친환경 제품</h3>
-		<img src="{% static 'img/Antirust_Oil.png' %}" />
+		<div>
+			<h2><a name="volatility">기화성 방청제</a></h2>
+			<h3>파우더를 부직포에 담고 플라스틱 용기에 넣어 이온 작용으로 방청 효과가 유지되기 때문에 직접 도포하는 일이 없어 취급이 간단하고 방청력이 장시간 지속 (방청기간 1년 ~ 3년)</h3>
+			<img src="{% static 'img/Antirust_1.png' %}" />
+			<img src="{% static 'img/Antirust_2.png' %}" />
+		</div>
+
+		<hr>
+		
+		<div>
+			<h2><a name="corrosion_oil">방청유</a></h2>
+			<h3>스프레이 타입으로 도포가 편리하고 방청력이 우수하며 인화점이 높아 안전한 친환경 제품</h3>
+			<img src="{% static 'img/Antirust_Oil.png' %}" />
+		</div>
 		{% endblock %}
 	</body>
 </html>
