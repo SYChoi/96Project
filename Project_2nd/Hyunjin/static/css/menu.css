@@ -16,7 +16,7 @@ nav {
 	position: relative;
 	float: right;
 	margin-top: 55px;
-	background: linear-gradient(90deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+	background: linear-gradient(90deg, blue, purple, red);
 }
 
 ul, li {
