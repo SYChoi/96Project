@@ -11,7 +11,10 @@
 
 	</head>
 	<body>
-		
+		<div id="sitemap">
+			<a href="/sitemap/"> SiteMap </a> |
+			<a href="/en/"> English </a>
+		</div>
 		<a href="/">
 			<img id="logo" src="{% static 'img/logo2.jpg' %}" >
 		</a>
@@ -20,35 +23,36 @@
 				<li><a href="#">기업소개</a>
 					<ul id="sub-menu">
 						<li><a href="/greeting/" aria-label="submenu">인사말</a></li>
-						<li><a href="#" aria-label="submenu">기업개요</a></li>
+						<!--<li><a href="#" aria-label="submenu">기업개요</a></li>-->
 						<li><a href="/contact/" aria-label="submenu">찾아오시는 길</a></li>
 					</ul>
 				</li>
 				<li><a href="/BA/">사업분야</a>
 					<ul id="sub-menu">
-						<li><a href="/engine_material/" aria-label="submenu">조선엔진기자재</a></li>
+						<li><a href="/engine_material/" aria-label="submenu">조선 엔진<br>기자재</a></li>
 						<li><a href="/raw_material/" aria-label="submenu">원자재</a></li>
 						<li><a href="/antirust/" aria-label="submenu">방청제</a></li>
 						<li><a href="/equip/" aria-label="submenu">장비&제작</a></li>
-						<li><a href="/industrial_part/" aria-label="submenu">산업용 부품</a></li>
+						<li><a href="/industrial_part/" aria-label="submenu">산업용부품</a></li>
 						<li><a href="/consulting/" aria-label="submenu">컨설팅</a></li>
 					</ul>
 				</li>
 				<li><a href="#">기술정보</a>
 					<ul id="sub-menu">
-						<li><a href="#" aria-label="submenu">방청제</a></li>
+						<li><a href="/antirust_detail/" aria-label="submenu">방청제</a></li>
 					</ul>
 				</li>
 				<li><a href="#">고객지원</a>
 					<ul id="sub-menu">
 						<li><a href="/notice/" aria-label="submenu">공지사항</a></li>
-						<li><a href="/online_consult/" aria-label="submenu">온라인 상담</a></li>
+						<li><a href="/online_consult/" aria-label="submenu">온라인상담</a></li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
-		<img src="#"/>
+		<div>
 		{% block content %}
 		{% endblock %}
+		</div>
 	</body>
 </html>

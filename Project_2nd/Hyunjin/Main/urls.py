@@ -16,4 +16,5 @@ urlpatterns = [
 	path('industrial_part/', views.indust_part, name='indust_part'),
 	path('engine_material/', views.engine_mat, name='engine_mat'),
 	path('BA/', views.BA, name='BA'),
+        path('antirust_detail/', views.antirust_detail, name="antirust_detail"),
 ]

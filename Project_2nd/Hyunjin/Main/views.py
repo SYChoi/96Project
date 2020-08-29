@@ -57,3 +57,6 @@ def engine_mat(request):
 
 def BA(request):
 	return render(request, 'business_area.html')
+
+def antirust_detail(request):
+        return render(request, 'antirust_detail.html')

@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto", serif;
+	font-family: sans-serif;
 	display: inline;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -13,10 +13,25 @@ nav {
 	width: 78%;
 	display: flex;
 	justify-content: center;
+	
+	position: absolute;
+
+	right: 5px;
+	margin-top: 55px;
+	
+	background: #182952;
+}
+
+#sitemap{
 	position: relative;
 	float: right;
-	margin-top: 55px;
-	background: linear-gradient(90deg, blue, purple, red);
+	right: 10vw;
+	top: 25px;
+}
+
+#sitemap > a {
+	color: gray;
+	text-decoration: none;
 }
 
 ul, li {
@@ -26,9 +41,11 @@ ul, li {
 }
 
 #logo {
-	width: 20%;
+	position: absolute;
+	width: 16%;
 	height: 150px;
-	margin: 10px;
+	margin: 15px;
+	margin-left: 40px;
 }
 
 #main-menu > li {
@@ -37,19 +54,19 @@ ul, li {
 }
 
 #main-menu > li > a {
-	font-size: 0.85rem;
+	font-size: 1.2vw;
 	color: rgba(255,255,255,0.85);
 	text-align: center;
 	text-decoration: none;
 	letter-spacing: 0.05em;
 	display: block;
-	padding: 14px 36px;
-	border-right: 1px solid rgba(0,0,0,0.15);
+	padding: 20px 70px;
+	border-right: 1px solid #FFFFFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
 #main-menu > li:nth-child(1) > a {
-	border-left: 1px solid rgba(0,0,0,0.15);
+	border-left: 1px solid #FFFFFF;
 }
 
 #sub-menu {
@@ -61,8 +78,8 @@ ul, li {
 }
 
 #sub-menu > li {
-	padding: 16px 28px;
-	border-bottom: 1px solid rgba(0,0,0,0.15);
+	padding: 16px 70px;
+	border-bottom: 1px solid white;
 	position: relative;
 	text-align: center;
 }
@@ -70,8 +87,8 @@ ul, li {
 #sub-menu > li > a {
 	color: rgba(255,255,255,0.6);
 	text-decoration: none;
-	font-size: 2vw;
-	margin: 0 auto;
+	font-size: 1vw;
+	margin: 0 auto;	
 	text-align: center;
 }
 
